@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple calculater</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="calculator">
+        <div class="display">
+            <input type="text" id="concatenation-input" placeholder="0"disabled>
+            <input type="text" id= "input-box" placeholder="0"disabled>
+        </div>
+
+        <div class="row">
+            <button onclick="cls()" type="button"class="op">AC</button>
+            <button onclick="del()" type="button" class="op">DEL</button>
+            <button onclick="getNum('%')" type="button"class="op">%</button>
+            <button onclick="getNum('/')" type="button"class="op">/</button>
+        </div>
+        <div class="row">
+            <button onclick="getNum(7)" type="button">7</button>
+            <button onclick="getNum(8)" type="button">8</button>
+            <button onclick="getNum(9)" type="button">9</button>
+            <button onclick="getNum('*')" type="button"class="op">*</button>
+        </div>
+        <div class="row">
+            <button onclick="getNum(4)"   type="button">4</button>
+            <button onclick="getNum(5)"   type="button">5</button>
+            <button onclick="getNum(6)"   type="button">6</button>
+            <button onclick="getNum('-')" type="button"class="op">-</button>
+        </div>
+        <div class="row">
+            <button onclick="getNum(1)"   type="button">1</button>
+            <button onclick="getNum(2)"   type="button">2</button>
+            <button onclick="getNum(3)"   type="button">3</button>
+            <button onclick="getNum('+')" type="button"class="op">+</button>
+        </div>
+        <div class="row">
+            <button onclick="getNum('00')"  type="button">00</button>
+            <button onclick="getNum(0)"   type="button">0</button>
+            <button onclick="getNum('.')" type="button">.</button>
+            <button onclick="calculate() "type="button" class="op">=</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
